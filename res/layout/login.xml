@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:paddingTop="60dip"
+    tools:context=".LoginActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_marginBottom="10dip"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/vote"/>
+
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+		android:lines="1"
+		android:maxLines="1"
+		android:singleLine="true"
+        android:hint="User ID" >
+
+        <requestFocus />
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:ems="10"
+        android:lines="1"
+        android:maxLines="1"
+		android:ellipsize="end"
+		android:singleLine="true"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/gagal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID or Password did not match"
+        android:textColor="#FF0000"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dip"
+        android:text="Log In" />
+
+</LinearLayout>
