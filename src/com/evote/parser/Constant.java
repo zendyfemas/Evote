@@ -5,7 +5,7 @@ import com.evote.model.Calon;
 
 public class Constant {
 	public static String host="192.168.81.1";
-	public static String url="http://"+host+"/evote/aaa";
+	public static String url="http://"+host+"/evote/";
 	public static String urlpict="http://"+host+"/evote/image/";
 	public static String idUser;
 	public static boolean pilih;
